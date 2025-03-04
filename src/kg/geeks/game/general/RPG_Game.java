@@ -45,11 +45,11 @@ public class RPG_Game {
         roundNumber++;
         boss.chooseDefence();
         boss.attack(heroes);
-        for (int i = 0; i < heroes.length; i++) {
-            if (heroes[i].getHealth() > 0 && boss.getHealth() > 0 &&
-                    heroes[i].getAbility() != boss.getDefence()) {
-                heroes[i].attack(boss);
-                heroes[i].applySuperPower(boss, heroes);
+        for (Hero hero : heroes) {
+            if (hero.getHealth() > 0 && boss.getHealth() > 0 &&
+                    hero.getAbility() != boss.getDefence()) {
+                hero.attack(boss);
+                hero.applySuperPower(boss, heroes);
             }
         }
         printStatistics(boss, heroes);
