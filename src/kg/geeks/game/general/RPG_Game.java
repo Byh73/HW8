@@ -21,6 +21,7 @@ public class RPG_Game {
         TrickyBastard trickyBastard = new TrickyBastard("Saule", 260, 7);
         Hacker hacker = new Hacker("Dolot", 267, 3);
         King king = new King("Mirhat", 250, 0);
+        // Да нет вот вроде есть
 
         Hero[] heroes = {warrior1, doc, warrior2, magic, berserk, assistant, trickyBastard, hacker, king};
 
